@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;
+}
+
+/* Estilos para el header */
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.header-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgb(223, 54, 54);
+    border-radius: 5px;
+}
+
+/* Sección de historia */
+.historia {
+    padding: 50px;
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* Contenedor general que usa Flexbox para dividir en dos columnas */
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Asegura espacio entre las columnas */
+    align-items: center; /* Alinea verticalmente si hay diferencia de altura */
+    margin: 20px 0; /* Agrega margen alrededor del contenedor */
+}
+
+/* Imagen con 30% de ancho */
+.image-container img {
+    width: 30%; /* La imagen ocupará el 30% del ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Contenedor de texto con 70% de ancho */
+.text-content {
+    width: 70%; /* El texto ocupará el 70% del ancho */
+    text-align: justify; /* Justifica el texto para una mejor lectura */
+}
+
+.text-content p {
+    margin-bottom: 15px; /* Espacio entre los párrafos */
+}
+
+
+.historia-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historia-img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.historia-text {
+    width: 50%;
+    padding-left: 20px;
+}
+
+/* Sección de valores */
+.core-values {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.core-values h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.values-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.value-item {
+    width: 30%;
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contenedor general que usa Flexbox para dividir en dos columnas */
+.historia-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Alineación vertical */
+    margin: 20px 0;
+}
+
+/* Contenedor de texto con 60% de ancho */
+.historia-content {
+    width: 60%; /* El texto ocupa el 60% del ancho */
+    text-align: justify; /* Justifica el texto para una mejor lectura */
+}
+
+.historia-content p {
+    margin-bottom: 15px; /* Espacio entre los párrafos */
+}
+
+/* Imagen con 40% de ancho */
+.historia-img {
+    width: 40%; /* La imagen ocupa el 40% del ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 10px; /* Bordes redondeados */
+}

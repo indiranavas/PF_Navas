@@ -41,18 +41,204 @@ nav li a:hover{
     background-color: rgb(223, 54, 54);
 }
 
-main{
-    height: 500px;
+
+.main {
+    padding: 1em;
+}
+
+.main h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 40px;
+}
+
+
+img{
+    height: 50%;
+    width: 100%;
+}
+
+footer {
+    background-color: #000; /* Fondo negro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px; /* Tamaño de los íconos */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Contenedor principal que utiliza flexbox para dividir en dos columnas */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* El contenido ocupará el 100% del contenedor padre */
+    margin: 0 auto;
+}
+
+/* Estilos para la imagen, ajustando al 50% del ancho */
+.image-container {
+    width: 50%; /* Ocupa el 50% del espacio disponible */
+}
+
+.image-container img {
+    width: 91%; /* La imagen se adapta al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para darle un mejor estilo */
+    margin-top: 10px;
+}
+
+/* Contenedor de texto, ocupando el 50% del espacio */
+.text-container {
+    width: 50%;
+    padding-left: 20px; /* Espaciado a la izquierda para separar la imagen del texto */
+    color: white;
+}
+
+/* Estilos para el bloque de cita */
+.text-container blockquote {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e63946;
+    border-left: 4px solid #e63946;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto adicional */
+.text-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Resaltar la frase final */
+.highlight {
+   
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+
+
+/* Estilos generales para el contenedor */
+.metodo-mf {
+    text-align: center;
+    color: white;
+    background-color: #1a1a2e;
+    padding: 17px;
+}
+
+.metodo-mf h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.metodo-mf h2 {
+    font-size: 1.2rem;
+    color: #e63946;
     
 }
 
 
-footer{
-    background-color: black;
-    height: 200px;
-}
+/* Estilos responsivos para pantallas móviles (max-width: 768px) */
+@media (max-width: 768px) {
+    
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
 
-img{
-    height: 100%;
-    width: 100%;
+    header img {
+        padding: 10px 0;
+        width: 150px; /* Ajusta el tamaño de la imagen del logo */
+    }
+
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: block; /* Los links de navegación se apilan en columnas */
+        margin: 10px 0;
+    }
+
+    nav li a {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .main h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto del título */
+    }
+
+    /* Ajustar el contenedor principal (flexbox) a columnas para móviles */
+    .content {
+        flex-direction: column;
+        text-align: center; /* Centrar el texto para móviles */
+    }
+
+    /* Imagen se ajusta al 100% para pantallas pequeñas */
+    .image-container {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+
+    .image-container img {
+        width: 100%; /* La imagen ocupa el 100% del contenedor en móviles */
+    }
+
+    /* Contenedor de texto se ajusta al 100% también */
+    .text-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Ajustar el tamaño del bloque de cita */
+    .text-container blockquote {
+        font-size: 1.2rem; /* Tamaño de la cita más pequeño en móviles */
+    }
+
+    /* Ajustar el tamaño de los párrafos */
+    .text-container p {
+        font-size: 0.9rem;
+    }
+
+    /* Reducir los iconos de redes sociales en el footer para pantallas pequeñas */
+    .social-icons img {
+        width: 30px; /* Tamaño más pequeño para móviles */
+        height: 30px;
+    }
+
+    /* Reducir el padding del footer en pantallas pequeñas */
+    footer {
+        padding: 10px 0;
+    }
+
+    .metodo-mf h1 {
+        font-size: 1.8rem; /* Ajustar el tamaño del encabezado */
+    }
+
+    .metodo-mf h2 {
+        font-size: 1rem; /* Ajustar el tamaño del subtítulo */
+    }
 }

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: whitesmoke;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+    text-align: center;
+    padding: 1em;
+    border: 2px solid gray;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border: 2px solid gray;
+    border-top: none;
+}
+
+.nav a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+/* Sombra al posicionarse con el cursor sobre los enlaces */
+.nav a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.main {
+    padding: 1em;
+}
+
+.main h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+.content .text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    gap: 1em;
+}
+
+.image-with-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-with-caption img {
+    width: 100%;
+    height: auto;
+}
+
+.image-with-caption figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 3em;
+}
+
+.footer {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    
+}
+
+.footer p a {
+    color: black;
+    text-decoration: none;
+   
+}
+
+.footer a:hover {
+    box-shadow: 0 4px 8px rgba(154, 141, 141, 0.3);
+}
+
+/* Reglas @media para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav a {
+        font-size: 19px;
+    }
+
+    .main h1 {
+        font-size: 25px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .content img, .content p, .content figcaption {
+        text-align: center;
+    }
+}
+
+
