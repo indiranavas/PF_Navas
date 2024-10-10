@@ -5,6 +5,7 @@
     font-family: "Roboto", Arial, Tahoma, sans-serif;
 }
 
+
 body {
     background-color: #fff;
     color: #333;
@@ -98,49 +99,28 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-
-
 /* Contenedor general que usa Flexbox para dividir en dos columnas */
 .image-container {
     display: flex;
-    justify-content: space-between; /* Asegura espacio entre las columnas */
-    align-items: center; /* Alinea verticalmente si hay diferencia de altura */
-    margin: 20px 0; /* Agrega margen alrededor del contenedor */
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
 }
 
-/* Imagen con 30% de ancho */
 .image-container img {
-    width: 30%; /* La imagen ocupará el 30% del ancho */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
-/* Contenedor de texto con 70% de ancho */
 .text-content {
-    width: 70%; /* El texto ocupará el 70% del ancho */
-    text-align: justify; /* Justifica el texto para una mejor lectura */
+    width: 70%;
+    text-align: justify;
 }
 
 .text-content p {
-    margin-bottom: 15px; /* Espacio entre los párrafos */
-}
-
-
-.historia-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.historia-img {
-    width: 45%;
-    border-radius: 10px;
-}
-
-.historia-text {
-    width: 50%;
-    padding-left: 20px;
+    margin-bottom: 15px;
 }
 
 /* Sección de valores */
@@ -186,29 +166,58 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
 /* Contenedor general que usa Flexbox para dividir en dos columnas */
 .historia-container {
     display: flex;
-    justify-content: space-between; /* Espacio entre la imagen y el texto */
-    align-items: center; /* Alineación vertical */
+    justify-content: space-between;
+    align-items: center;
     margin: 20px 0;
 }
 
-/* Contenedor de texto con 60% de ancho */
 .historia-content {
-    width: 60%; /* El texto ocupa el 60% del ancho */
-    text-align: justify; /* Justifica el texto para una mejor lectura */
+    width: 60%;
+    text-align: justify;
 }
 
 .historia-content p {
-    margin-bottom: 15px; /* Espacio entre los párrafos */
+    margin-bottom: 15px;
 }
 
-/* Imagen con 40% de ancho */
 .historia-img {
-    width: 40%; /* La imagen ocupa el 40% del ancho */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
-    border-radius: 10px; /* Bordes redondeados */
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para el menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
 }
