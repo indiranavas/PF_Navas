@@ -6,71 +6,65 @@
     <link rel="stylesheet" href="css/estilo.css">
     <title>Mi Pagina</title>
 </head>
-<body>
-    
+</body>
     <header>
-    
         <nav>
-            <a href="index.html"></a>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="html/conoceme.html">Conoceme</a>
-                </li>
-                <li>
-                    <a href="html/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="html/teams.html">Teams</a>
-                </li>
-                <li>
-                    <a href="html/blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="html/unete.html">Unete ahora</a>
-                </li>
-               
+            <div class="menu-hamburger" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/conoceme.html">Conoceme</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+                <li><a href="html/teams.html">Teams</a></li>
+                <li><a href="html/blog.html">Blog</a></li>
+                <li><a href="html/unete.html">Unete ahora</a></li>
             </ul>
         </nav>
-       
     </header>
+
     <div class="scroll-container">
-    <img src="https://soymotivacionfit.com/wp-content/uploads/2024/03/photo_5904275457614922018_y.jpg" alt="">      
-</div>
+        <img src="https://soymotivacionfit.com/wp-content/uploads/2024/03/photo_5904275457614922018_y.jpg" alt="">
+    </div>
 
-    
-
-        <main class="main">
-                <section class="metodo-mf">
-                    <h1>MÉTODO MF:</h1>
-                    <h2>Transforma tu cuerpo, cambiando tu mindset</h2>
-                    <br>
-                    <div class="content">
-                        <div class="image-container">
-                            <img src="img/photo_5904275457614922016_y.jpg" alt="Samuel Alejandro">
-                        </div>
-                        <div class="text-container">
-                            <blockquote>
-                                "RESTABLECE TUS HÁBITOS, MEJORA TU AUTOESTIMA Y ELEVA TU NIVEL DE CONCIENCIA"
-                            </blockquote>
-                            <p>Te mostraré las mejores herramientas para conseguir tus objetivos en relación a la alimentación, así como la adquisición del hábito del ejercicio físico.</p>
-                            <p class="highlight">
-                                A través de sesiones de coaching y entrenamientos planificados.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                
-
+    <main class="main">
+        <section class="metodo-mf">
+            <h1>MÉTODO MF:</h1>
+            <h2>Transforma tu cuerpo, cambiando tu mindset</h2>
+            <br>
+            <div class="content">
+                <div class="image-container">
+                    <img src="img/photo_5904275457614922016_y.jpg" alt="Samuel Alejandro">
+                </div>
+                <div class="text-container">
+                    <blockquote>
+                        "RESTABLECE TUS HÁBITOS, MEJORA TU AUTOESTIMA Y ELEVA TU NIVEL DE CONCIENCIA"
+                    </blockquote>
+                    <p>Te mostraré las mejores herramientas para conseguir tus objetivos en relación a la alimentación, así como la adquisición del hábito del ejercicio físico.</p>
+                    <p class="highlight">
+                        A través de sesiones de coaching y entrenamientos planificados.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
-       
-            <footer class="bg-dark text-center text-white">
-            <p class="footer-legend">Cambia tus habitos transformando tu cuerpo</p>
-            <p>Seguinos en nuestras</p>
-            <p>Redes Sociales: <a href="https://es-la.facebook.com/"> Facebook</a>  | <a href="https://www.instagram.com/accounts/login/">Instagram</a>  | <a href="https://x.com/i/flow/login?redirect_after_login=%2FInicio%2F"> X</a> </p>
-            <p>2024 | Samuel Alejandro Todos los derechos reservados.</p>
-        </footer>
+
+    <footer>
+        <p class="footer-legend">Cambia tus habitos transformando tu cuerpo</p>
+        <p>Seguinos en nuestras</p>
+        <p>Redes Sociales: <a href="https://es-la.facebook.com/"> Facebook</a>  | <a href="https://www.instagram.com/accounts/login/">Instagram</a>  | <a href="https://x.com/i/flow/login?redirect_after_login=%2FInicio%2F"> X</a> </p>
+        <p>2024 | Samuel Alejandro Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

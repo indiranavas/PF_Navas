@@ -20,7 +20,12 @@
 
         <!-- Barra de navegación -->
         <nav>
-            <ul>
+            <div class="menu-hamburger" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="conoceme.html">Conoceme</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -114,7 +119,14 @@
     </div>
 
 
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
 
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 
 
 </body>
