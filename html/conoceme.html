@@ -2,99 +2,218 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivación Fit</title>
-    <link rel="stylesheet" href="../css/conoceme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- metedatos descripcion y keywords -->
+  <meta name="description"
+    content="Bienvenidos a Yo Soy Motivacion FIT, tu sitio web de instruccion deportiva y de acondicionamiento fisico. Descubre las últimas noticias de fitness, nutricion, mentalidad y entrenamiento.">
+  <meta name="keywords" content="Fitness, nutricion, mentalidad y entrenamiento">
+  <!-- link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- link de font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+
+  <!-- titulo y favicon -->
+  <link rel="icon" href="../img/logo.jpg" type="image/png" sizes="32x32">
+  <title> Conoceme - Soy Motivacion FIT</title>
 </head>
 
 <body>
+  <!-- barra de navegacion -->
+  <!-- aplicamos bootstrap en la barra de navegacion  -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="Logo" style="height: 60px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="conoceme.html">Conoceme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="unete.html">Unete</a>
+            </li>
+          </ul>
 
-    <div class="grid-container">
-        <!-- Header con imagen grande -->
-        <header class="header">
-            <img src="../img/photo_5904275457614922015_y.jpg" alt="Banner">
-            <h1 class="header-title">Conoceme</h1>
-        </header>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- cuerpo principal -->
 
-        <!-- Barra de navegación con menú hamburguesa -->
-        <nav>
-            <div class="menu-hamburger" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+  <main>
+    <section class="ofertas">
+      <h2 class="titulo_o">Conoceme</h2>
+      <div class="articulo oferta-destacada">
+        <img src="../img/90.jpg" alt="banner de ofertas">
+        <p> TU MEJOR VERSIÓN NO está, ni depende de
+          nada externo YA EXISTE, ESTA DENTRO DE TI Y
+          ESTA AHI ESPERANDOTE, ES SOLO QUE
+          CONECTES CON ELLA Y COMENZARAS A TOMAR
+          DECISIÓNES, acciones adecuadas y por
+          consecuencia atraerás LOS RESULTADOS
+          QUE QUIERES.
+
+
+        </p>
+        <div class="container mt-5">
+          <!-- Title section -->
+          <div class="text-center mb-5">
+            <h2>Soy Samuel Alejandro tu Coaching</h2>
+            <p class="lead">Desde hace más de 14 años samuel
+              Alejandro lleva un estilo de vida
+              saludable. Con 25 años comienza en
+              el mundo del fitness, logrando
+              obtener sus primeros estudios
+              académicos en el área.
+              .</p>
+          </div>
+
+          <!-- Content section -->
+          <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+              <h3>Físico y mente: un solo camino</h3>
+              <p>A su vez en ese camino de vida
+                saludable, decide probar competir
+                en fisiculturismo lo cual lo lleva a
+                descubrir que el físico está
+                íntimamente relacionado con la
+                mente y emociones</p>
             </div>
-            <ul id="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="conoceme.html">Conoceme</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="unete.html">Únete ahora</a></li>
-            </ul>
-        </nav>
+            <div class="col-md-6">
+              <img src="../img/metodoMF.jpg" class="img-fluid rounded" alt="Bag image">
+            </div>
+          </div>
 
-        <!-- Main content: Sección de historia e información principal -->
-        <main class="main">
-            <section class="historia">
-                <h2>Nuestra Historia</h2>
+          <!-- Second section -->
+          <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+              <img src="../img/2.jpg" class="img-fluid rounded" alt="Another bag image">
+            </div>
+            <div class="col-md-6">
+              <h3>Compartiendo conocimiento</h3>
+              <p>Mi pasión por ayudar a otros me ha llevado a viajar por Latinoamérica y España,
+                transformando la vida de miles de personas. A lo largo de estos años,
+                he dejado atrás mi empleo para dedicarme de lleno al coaching.</p>
+            </div>
+          </div>
 
-                <div class="image-container">
-                    <img src="../img/photo_5904275457614922020_x-Photoroom.jpg" alt="Nuestra Historia" class="historia-img">
-                    <div class="text-content">
-                        <p>Soy Motivación Fit es un aliado confiable en la industria del fitness, conocido por su enfoque personalizado para cada individuo.</p>
-                        <p>Comenzamos con una pasión por empoderar a los demás para que lleven un estilo de vida más saludable y alcancen su máximo potencial a través del fitness y el desarrollo personal.</p>
-                        <p>Con una diversa clientela, desde principiantes hasta atletas avanzados, nuestro éxito habla de la dedicación y efectividad de nuestros programas.</p>
-                    </div>
-                </div>
+          <div class="container mt-5">
+            <!-- Content section -->
+            <div class="row align-items-center mb-5">
+              <div class="col-md-6">
+                <h3>Tu cambio comienza aquí</h3>
+                <p>Hoy, sigo mi camino como atleta y coach,
+                  con más de 800 procesos exitosos.
+                  Mi misión es fortalecer la conexión entre el cuerpo y la mente,
+                  para que tú también puedas alcanzar tu máximo potencial.</p>
+              </div>
+              <div class="col-md-6">
+                <img src="../img/5.jpg" class="img-fluid rounded" alt="Bag image">
+              </div>
+            </div>
 
-                <div class="historia-container">
-                    <div class="historia-content">
-                        Samuel Alejandro no es solo un entrenador físico, es una fuente de inspiración para todos aquellos que desean transformar sus vidas a través de la salud y el ejercicio. Su pasión por el fitness nació de su propia experiencia personal, enfrentando desafíos tanto físicos como emocionales que lo llevaron a descubrir el poder transformador del ejercicio
-                        Desde sus inicios, Samuel comprendió que el entrenamiento físico va mucho más allá de la estética; se trata de construir una salud integral que abarque cuerpo, mente y espíritu. Su enfoque va dirigido a ayudar a otros a alcanzar no solo su máximo rendimiento físico, sino también una mentalidad más saludable y positiva, que les permita enfrentarse a los desafíos de la vida con mayor energía y confianza.
-                    </div>
-                    <img src="../img/photo_5904275457614922009_y.jpg" alt="Nuestra Historia" class="historia-img">
-                </div>
+            <!-- Second section -->
+            <div class="row align-items-center mb-5">
+              <div class="col-md-6">
+                <img src="../img/4.jpg" class="img-fluid rounded" alt="Another bag image">
+              </div>
+              <div class="col-md-6">
+                <h3>Crecimiento personal y hábitos</h3>
+                <p>Por lo que decide comenzar a
+                  aprender de desarrollo personal, mentalidad y gestión emocional
+                  para integrarlo a los hábitos de
+                  vida..</p>
+              </div>
+            </div>
 
-            </section>
+            <div class="text-center mb-5">
+              <h1>Tu mejor versión ya existe</h1>
+              <p>Está dentro de ti, esperando a que te conectes con ella.
+                Toma decisiones, actúa, y verás cómo atraes los resultados que deseas.</p>
+            </div>
 
-            <!-- Sección de valores principales -->
-            <section class="core-values">
-                <h2>Nuestros Valores</h2>
-                <div class="values-content">
-                    <div class="value-item">
-                        <h3>Personalización</h3>
-                        <p>Adaptamos programas de acondicionamiento físico y apoyo a las necesidades y aspiraciones únicas de cada individuo, garantizando un éxito personalizado.</p>
-                    </div>
-                    <div class="value-item">
-                        <h3>Empoderamiento</h3>
-                        <p>Fomentar un sentido de empoderamiento y confianza en uno mismo en nuestra comunidad, motivando a las personas a conquistar su viaje de acondicionamiento físico.</p>
-                    </div>
-                    <div class="value-item">
-                        <h3>Comunidad</h3>
-                        <p>Construir una comunidad solidaria y alentadora donde los miembros puedan compartir experiencias, celebrar logros e inspirarse unos a otros.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+          </div>
 
-        <!-- Footer con enlaces a redes sociales -->
-        <footer class="footer">
-            <p>Redes Sociales: <a href="https://es-la.facebook.com/">Facebook</a> | <a href="https://www.instagram.com/accounts/login/">Instagram</a> | <a href="https://x.com/i/flow/login?redirect_after_login=%2FInicio%2F">X</a></p>
-            <p>2024 | MODA BUENOS AIRES. Todos los derechos reservados.</p>
-        </footer>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+  </main>
+
+  <!--footer -->
+  <footer class="pie-pagina">
+    <div class="redes-sociales">
+      <!-- enlaces a redes sociales con iconos -->
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="enlace-red"><i
+          class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://x.com" target="_blank" rel="noopener" class="enlace-red"><i
+          class="fa-brands fa-x-twitter"></i>Twitter</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="enlace-red"><i
+          class="fab fa-instagram"></i> Instagram</a>
     </div>
+    <div class="informacion">
+      <p>&copy;Soy Motivacion FIT 2024. Todos los derechos reservados.</p>
+      <ul class="lista-enlaces">
+        <li><a href="html/contacto.html" class="enlace-footer"><i class="fa-solid fa-address-book"></i> Contacto</a>
+        </li>
+        <li><a href="html/preguntas.html" class="enlace-footer"><i class="fa-solid fa-question"></i> Preguntas
+            Frecuentes</a></li>
+      </ul>
+    </div>
+  </footer>
 
-    <!-- Script para el menú hamburguesa -->
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
-
+  <!-- script Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
